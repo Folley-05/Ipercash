@@ -1,0 +1,12 @@
+{
+  "name": "Ipercash",
+  "displayName": "Ipercash",
+  "expo": {
+    "name": "Ipercash",
+    "slug": "Ipercash",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
