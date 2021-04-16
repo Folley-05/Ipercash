@@ -1,5 +1,5 @@
-const primaryColor='#dd1a14'
+const primaryColor='#958f8f' 
 
-const secondaryColor='#958f8f'
+const secondaryColor='#dd1a14'
 
 export { primaryColor, secondaryColor }

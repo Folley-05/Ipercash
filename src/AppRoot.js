@@ -6,14 +6,15 @@ import { NavigationContainer } from '@react-navigation/native'
 // import Home from './pages/applications/Home'
 // import NavBar from './layout/NavBar'
 import DrawerNavigation from './navigation/DrawerNavigation'
+import { primaryColor, secondaryColor } from './asset/data/Colors'
 
 
 const theme={
     ...DefaultTheme,
     colors: {
         ...DefaultTheme.colors,
-        primary: '#958f8f',
-        accent: '#dd1a14'
+        primary: primaryColor,
+        accent: secondaryColor
     }
 }
 

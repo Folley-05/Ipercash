@@ -43,7 +43,7 @@ const Home = ({navigation}) => {
             <View style={styles.body}>
                 <View style={styles.banner}>
                     {/* <Text style={styles.name}>IperCash</Text> */}
-                    <Image source={require('../asset/logotransparent.jpg')} style={styles.bannerImage} />
+                    <Image source={require('../asset/logo-Icon.png')} style={styles.bannerImage} />
                     <Text style={styles.bannerText}> Buy and sell cryptocurrencies </Text>
                 </View>
                 <View style={styles.actionContainer}>
@@ -86,7 +86,7 @@ const styles=StyleSheet.create({
         backgroundColor: '#dd1a14',
     },
     body: {
-        flex: 5,
+        flex: 8,
         //backgroundColor: 'green',
     },
     name: {
@@ -99,13 +99,13 @@ const styles=StyleSheet.create({
         alignItems: 'center',
     },
     bannerImage: {
-        width: 150,
-        height: 150
+        width: 180,
+        height: 220
     },
     bannerText: {
         fontSize: 30,
         fontWeight: 'bold',
-        color: primaryColor,
+        color: secondaryColor,
         marginRight: 20,
         marginLeft: 10,
         textAlign: 'center',
@@ -121,7 +121,7 @@ const styles=StyleSheet.create({
         alignItems: 'center',
         height: 75,
         marginTop: 25,
-        backgroundColor: secondaryColor,
+        backgroundColor: primaryColor,
         borderColor: '#958f8f',
         borderWidth: 2,
         borderRadius: 2,
