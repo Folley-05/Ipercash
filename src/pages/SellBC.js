@@ -51,7 +51,7 @@ const SellBC = ({navigation}) => {
                 </ScrollView>
             </View>
             <View style={styles.footer}>
-                <View style={styles.bottomContainer}></View>
+                {/* <View style={styles.bottomContainer}></View> */}
             </View>
         </View>
     )

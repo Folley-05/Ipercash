@@ -51,7 +51,7 @@ const Login = ({navigation}) => {
                 </View>
             </View>
             <View style={styles.footer}>
-                <View style={styles.bottomContainer}></View>
+                {/* <View style={styles.bottomContainer}></View> */}
             </View>
         </View>
     )

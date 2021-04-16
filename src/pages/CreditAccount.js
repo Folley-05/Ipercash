@@ -32,7 +32,7 @@ const CreditAccount = ({navigation}) => {
             </View>
             </ScrollView>
             <View style={styles.footer}>
-                <View style={styles.bottomContainer}></View>
+                {/* <View style={styles.bottomContainer}></View> */}
             </View>
         </View>
     )

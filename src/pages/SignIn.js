@@ -31,7 +31,7 @@ const SignIn = ({navigation}) => {
                 <SignInForm submit={sub} />
             </View>
             <View style={styles.footer}>
-                <View style={styles.bottomContainer}></View>
+                {/* <View style={styles.bottomContainer}></View> */}
             </View>
         </View>
     )
