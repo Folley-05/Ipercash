@@ -11,6 +11,14 @@ const Home = ({navigation}) => {
     const [visible, setVisible]=useState(false)
     const openMenu=()=>setVisible(true)
     const closeMenu=()=>setVisible(false)
+    const login=()=>{
+        closeMenu()
+        navigation.navigate('login')
+    }
+    const signin=()=>{
+        closeMenu()
+        navigation.navigate('signin')
+    }
     return (
         <View style={styles.home}>
             <View style={styles.header}>
@@ -25,10 +33,10 @@ const Home = ({navigation}) => {
                                         <MaterialIcons name="more-vert" size={30} color='#fff' /> 
                                     </TouchableOpacity>}
                         >
-                            <Menu.Item title="Log In" onPress={()=>{navigation.navigate('login')}} />
+                            <Menu.Item title="Log In" onPress={login} />
                             <Menu.Item title="Log Out" onPress={()=>{}} />
                             <Divider />
-                            <Menu.Item title="Sign Up" onPress={()=>{navigation.navigate('signin')}} />
+                            <Menu.Item title="Sign Up" onPress={signin} />
                         </Menu>
                 </View>
             </View>
