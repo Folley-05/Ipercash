@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { StyleSheet, View, Text, TouchableOpacity, Image } from 'react-native'
+import { StyleSheet, View, Text, TouchableOpacity, Image, ScrollView } from 'react-native'
 import { Menu, Divider, Button } from 'react-native-paper'
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
 
@@ -40,24 +40,26 @@ const Home = ({navigation}) => {
                         </Menu>
                 </View>
             </View>
-            <View style={styles.body}>
-                <View style={styles.banner}>
-                    {/* <Text style={styles.name}>IperCash</Text> */}
-                    <Image source={require('../asset/logo-Icon.png')} style={styles.bannerImage} />
-                    <Text style={styles.bannerText}> Buy and sell cryptocurrencies </Text>
+                <View style={styles.body}>
+                <ScrollView>
+                    <View style={styles.banner}>
+                        {/* <Text style={styles.name}>IperCash</Text> */}
+                        <Image source={require('../asset/logo-Icon.png')} style={styles.bannerImage} />
+                        <Text style={styles.bannerText}> Buy and sell cryptocurrencies </Text>
+                    </View>
+                    <View style={styles.actionContainer}>
+                        <TouchableOpacity style={styles.action} onPress={()=>navigation.navigate('credit')}>
+                            <Text style={styles.actionText}>Credit Mobile Account</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={styles.action} onPress={()=>navigation.navigate('buy')}>
+                            <Text style={styles.actionText}>Buy Crypto</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={styles.action} onPress={()=>navigation.navigate('sell')}>
+                            <Text style={styles.actionText}>Sell Crypto</Text>
+                        </TouchableOpacity>
+                    </View>
+                </ScrollView>
                 </View>
-                <View style={styles.actionContainer}>
-                    <TouchableOpacity style={styles.action} onPress={()=>navigation.navigate('credit')}>
-                        <Text style={styles.actionText}>Credit Mobile Account</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={styles.action} onPress={()=>navigation.navigate('buy')}>
-                        <Text style={styles.actionText}>Buy Crypto</Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={styles.action} onPress={()=>navigation.navigate('sell')}>
-                        <Text style={styles.actionText}>Sell Crypto</Text>
-                    </TouchableOpacity>
-                </View>
-            </View>
             <View style={styles.footer}>
                 {/* <View style={styles.bottomContainer}>
 
@@ -75,7 +77,7 @@ const styles=StyleSheet.create({
         backgroundColor: '#fff',
     },
     header: {
-        flex: 1,
+        //flex: 1,
         //backgroundColor: 'red',
     },
     titleBar: {
@@ -86,8 +88,8 @@ const styles=StyleSheet.create({
         backgroundColor: '#dd1a14',
     },
     body: {
-        flex: 8,
-        //backgroundColor: 'green',
+        flex: 1,
+        marginTop: 5,
     },
     name: {
         fontSize: 25,
@@ -132,7 +134,7 @@ const styles=StyleSheet.create({
         fontWeight: 'bold'
     },
     footer: {
-        flex: 1,
+        //flex: 1,
         display: 'flex',
         flexDirection: 'column-reverse',
     },
@@ -144,5 +146,7 @@ const styles=StyleSheet.create({
         borderWidth: 2,
         flexGrow: 1,
         backgroundColor: 'green',
+        borderColor: 'black',
+        borderWidth: 2,
     }
 })
