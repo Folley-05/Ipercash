@@ -57,6 +57,9 @@ const Home = ({navigation}) => {
                         <TouchableOpacity style={styles.action} onPress={()=>navigation.navigate('sell')}>
                             <Text style={styles.actionText}>Sell Crypto</Text>
                         </TouchableOpacity>
+                        <TouchableOpacity style={styles.action} onPress={()=>navigation.navigate('webview')}>
+                            <Text style={styles.actionText}>Open WebView</Text>
+                        </TouchableOpacity>
                     </View>
                 </ScrollView>
                 </View>
@@ -90,6 +93,7 @@ const styles=StyleSheet.create({
     body: {
         flex: 1,
         marginTop: 5,
+        marginBottom: 10,
     },
     name: {
         fontSize: 25,

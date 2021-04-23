@@ -10,6 +10,7 @@ import SellBC from '../pages/SellBC'
 import CreditAccount from '../pages/CreditAccount'
 import Login from '../pages/Login'
 import SignIn from '../pages/SignIn'
+import Web from '../pages/WebView'
 
 
 const Stack=createStackNavigator()
@@ -46,6 +47,10 @@ const AppliNavigation=(props)=>{
             <Stack.Screen
                 name="signin"
                 component={SignIn}
+            />
+            <Stack.Screen
+                name="webview"
+                component={Web}
             />
         </Stack.Navigator>
     )
