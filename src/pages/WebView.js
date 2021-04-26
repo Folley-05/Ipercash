@@ -5,6 +5,7 @@ import { WebView } from 'react-native-webview'
 export  function Web() {
     return (
         <View style={styles.container}>
+            <Text> La WebView </Text>
                 <WebView 
                     originWhitelist={['*']}
                     source={{ uri: 'https://ipercash.fr/' }}
